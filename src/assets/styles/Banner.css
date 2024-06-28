@@ -1,0 +1,203 @@
+.banner {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    padding: 50px;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+  
+  }
+  
+  .banner-logo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .text-content {
+    max-width: 600px;
+    text-align: left;
+    justify-content: baseline;
+  }
+  
+  .text-content .logo1 {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-buttons {
+    margin-top: 20px;
+  }
+  
+  .book-service-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-service-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .logo1 {
+    height: 250px;
+    align-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .vertical-button {
+    position: absolute;
+    right: 0;
+    top:30%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 240px;
+    background-color: #7AC0FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vertical-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*    banner 2  */
+
+.banner2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/background.png');
+  background-size:contain;  
+  background-position: center;
+  color: white;
+  padding: 50px;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.banner2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.8); /* Adjust the color and opacity as needed */
+  z-index: 1;
+}
+
+.banner2-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text2-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+/*  banner 3  */
+
+.banner3-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo3-content {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.logo3 {
+  width: 80%;
+
+}
+
+/* Custom styles for slick dots */
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  /* left: 20px; */
+  display: flex !important;
+  /* flex-direction: column; */
+}
+
+.slick-dots li {
+  margin: 5px 5px;
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  color: white;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: white;
+}

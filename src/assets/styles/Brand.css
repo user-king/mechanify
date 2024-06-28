@@ -1,0 +1,30 @@
+/* BrandPage.css */
+.brand-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.brand-page h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #0187FF;
+}
+
+.brand-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between images */
+}
+
+.brand-images img {
+    width: 100px;
+    height: 100px;
+    object-fit:contain;
+    border-radius: 0px;
+}

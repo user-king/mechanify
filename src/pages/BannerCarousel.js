@@ -1,0 +1,57 @@
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../assets/styles/Banner.css';
+import Banner from '../components/Banner';
+import Banner2 from '../components/Banner2';
+import Banner3 from '../components/Banner3';
+import { motion } from 'framer-motion';
+
+const BannerCarousel = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        appendDots: dots => (
+            <div style={{ position: 'absolute', bottom: '20px', }}>
+                <ul style={{ margin: '0px' }}> {dots} </ul>
+            </div>
+        ),
+    };
+
+    const slides = [
+        { component: <Banner /> },
+        { component: <Banner2 /> },
+        { component: <Banner3 /> }
+    ];
+
+    return (
+        <Slider {...settings}>
+            {/* <Banner />
+                <Banner2 />
+                <Banner3 /> */}
+            {slides.map((slide, index) => (
+                <div key={index}>
+                    {index === 1 ? (
+                        <motion.div
+                            initial={{ y: '100vh' }}
+                            animate={{ y: 0 }}
+                            transition={{ type: 'spring', stiffness: 50 }}
+                        >
+                            {slide.component}
+                        </motion.div>
+                    ) : (
+                        slide.component
+                    )}
+                </div>
+            ))}
+        </Slider>
+    );
+};
+
+export default BannerCarousel;

@@ -1,0 +1,87 @@
+/* src/assets/styles/AnimatedBannerSpring.css
+.animated-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner-content {
+    flex: 1;
+  }
+  
+  .banner-image {
+    height: 300px;
+  }
+  
+  .animated-button {
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .animated-button:hover {
+    background-color: #e6e6e6;
+  }
+   */
+
+   .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 50px;
+    position: relative;
+  }
+  
+  .banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .book-service-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-service-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .logo {
+    height: 150px;
+  }
+  

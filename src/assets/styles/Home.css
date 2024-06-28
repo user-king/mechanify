@@ -1,0 +1,64 @@
+.banner {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 50px;
+    position: relative;
+  }
+  
+  .banner-logo {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .text-content {
+    max-width: 600px;
+    text-align: left;
+    justify-content: baseline;
+  }
+  
+  .text-content .logo {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-buttons {
+    margin-top: 20px;
+  }
+  
+  .book-service-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-service-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* .logo1 {
+    height: 150px;
+  } */
