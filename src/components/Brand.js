@@ -14,27 +14,54 @@ import bajaj from '../assets/images/bajaj.png';
 const images = [honda, tvs, hero, bajaj, suzuki, royal_enfield, mahindra, ktm, yamaha];
 
 const Brand = () => {
-    const imageVariants = {
-        // initial: { scale: 0.8, x: '-100%' },
-        // animate: { scale: [1, 0.8, 1], x: 0 },
-        // transition: { duration: 2, ease: 'easeInOut' }
-        initial: { x: '100vw', scale: 0.8, opacity: 0 },
-        animate: { x: 0, scale: 1, opacity: 1 },
-        exit: { x: '-100vw', scale: 0.8, opacity: 0 }
-    
+
+    const headingVariants = {
+        initial: { y: '-100vh' },
+        animate: { y: 0 },
     };
+
+    const imageContainerVariants = {
+        // initial: { y: '100vh' },
+        // animate: { y: 0 },
+        initial: { opacity: 0 },
+        animate: { opacity: 1, transition: { delay: 0.5 } },
+    };
+
+    const imageVariants = {
+        initial: { opacity: 0, y: 50 },
+        animate: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: -50 },
+    };
+
+    // const imageVariants = {
+    //     // initial: { scale: 0.8, x: '-100%' },
+    //     // animate: { scale: [1, 0.8, 1], x: 0 },
+    //     // transition: { duration: 2, ease: 'easeInOut' }
+    //     initial: { x: '100vw', scale: 0.8, opacity: 0 },
+    //     animate: { x: 0, scale: 1, opacity: 1 },
+    //     exit: { x: '-100vw', scale: 0.8, opacity: 0 }
+    // };
 
     return (
         <div className="brand-page">
             <motion.h1
+                className="brand-heading"  
+                variants={headingVariants}
                 initial={{ y: '-100vh' }}
                 animate={{ y: 0 }}
                 transition={{ type: 'spring', stiffness: 50, delay: 0.5 }}
             >
-                Brands We Serve 
+                Brands We Serve
             </motion.h1>
-            <div className="brand-images">
-            {images.map((image, index) => (
+            <motion.div
+                className="brand-images"
+                variants={imageContainerVariants}
+                initial="initial"
+                animate="animate"
+                transition={{ type: 'spring', stiffness: 50, delay: 0.7 }}
+            >
+            {/* <div className="brand-images"> */}
+                {images.map((image, index) => (
                     <motion.img
                         key={index}
                         src={image}
@@ -50,79 +77,9 @@ const Brand = () => {
                     />
                 ))}
 
-                {/* <motion.img
-                    src={honda}
-                    alt="honda"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 0.5 }}
-                />
-                <motion.img
-                    src={tvs}
-                    alt="tvs"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 1 }}
-                />
-                <motion.img
-                    src={hero}
-                    alt="hero"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 1.5 }}
-                />
-                <motion.img
-                    src={bajaj}
-                    alt="bajaj"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 0.5 }}
-                />
-                <motion.img
-                    src={suzuki}
-                    alt="suzuki"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 1 }}
-                />
-                <motion.img
-                    src={royal_enfield}
-                    alt="royalEnfield"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 1.5 }}
-                />
-                <motion.img
-                    src={mahindra}
-                    alt="mahindra"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 0.5 }}
-                />
-                <motion.img
-                    src={ktm}
-                    alt="ktm"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 1 }}
-                />
-                <motion.img
-                    src={yamaha}
-                    alt="yamaha"
-                    variants={imageVariants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ ...imageVariants.transition, delay: 1.5 }}
-                /> */}
-            </div>
+            {/* </div> */}
+            </motion.div>
+        
         </div>
     );
 };

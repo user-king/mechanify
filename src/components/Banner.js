@@ -3,10 +3,14 @@ import React from 'react'
 import '../assets/styles/Banner.css';
 import bannerImage from '../assets/images/banner_image.png';
 import { motion } from 'framer-motion';
+import SearchBar from './SearchBar';
 
 const Banner = () => {
     return (
         <div className="banner">
+            <div className="search-bar-container">
+                <SearchBar />
+            </div>
             <div className="banner-content">
                 <div className="text-content">
                     <motion.h1

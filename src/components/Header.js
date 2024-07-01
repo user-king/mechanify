@@ -12,8 +12,12 @@ const Header = () => {
         <img src={mechanifyLogo} alt="Mechanify Logo" className="logo-header" />
       </div>
       <nav className="nav">
-        <Link to="/" className="nav-link">Home</Link>
-        {/* <div className="dropdown">
+        {/* <Link to="/" className="nav-link">Home</Link> */}
+        <div className="user-options">
+          <button className="btn1">Home</button>
+        </div>
+
+        <div className="dropdown">
           <button className="dropbtn">Services 
             <i className="arrow-down"></i>
           </button>
@@ -22,9 +26,9 @@ const Header = () => {
             <Link to="/service2">Service 2</Link>
             <Link to="/service3">Service 3</Link>
           </div>
-        </div> */}
+        </div>
 
-        <Link to="/services" className="nav-link">Services</Link>
+        {/* <Link to="/services" className="nav-link">Services</Link> */}
         <Link to="/about" className="nav-link">About</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
         <Link to="/blog" className="nav-link">Blog</Link>
@@ -33,7 +37,10 @@ const Header = () => {
       <div className="user-options">
         <button className="btn">My Orders</button>
         <button className="btn">Login</button>
-        <img src={userIcon} alt="User Icon" className="user-icon" />
+        {/* <img src={userIcon} alt="User Icon" className="user-icon" /> */}
+        <div className="user-icon-container">
+          <img src={userIcon} alt="User Icon" className="user-icon" />
+        </div>
       </div>
     </header>
   );

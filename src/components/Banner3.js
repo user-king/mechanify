@@ -2,10 +2,15 @@ import React from 'react'
 import '../assets/styles/Banner.css';
 import logo from '../assets/images/mechanify_logo.png';
 import { motion } from 'framer-motion';
+import SearchBar from './SearchBar';
 
 const Banner3 = () => {
     return (
         <div className="banner2">
+            <div className="search-bar-container">
+                <SearchBar />
+            </div>
+
             <div className="banner3-content">
                 <div className="logo3-content">
                     <motion.img

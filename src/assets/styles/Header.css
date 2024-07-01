@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007bff;
+  background-color:#188AEC;
   padding: 10px 20px;
   color: white;
 }
@@ -91,20 +91,41 @@
 }
 
 .btn {
-  background-color: white;
-  color: #007bff;
+  color: white;
+  /* background-color: #007bff; */
   border: none;
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
   border-radius: 5px;
+  background-color:#188AEC;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 120px;
 }
 
+.btn1 {
+  color: black;
+  /* background-color: #007bff; */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  /* border-radius: 5px; */
+
+}
 .btn:hover {
   background-color: #e7e7e7;
 }
 
+.user-icon-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 4px; */
+  align-items: center; 
+}
 .user-icon {
-  height: 40px;
+  height: 60px;
   border-radius: 50%;
+  margin-left: -45px;
 }

@@ -2,6 +2,7 @@
 import React from 'react'
 import '../assets/styles/Banner.css';
 import { motion } from 'framer-motion';
+import SearchBar from './SearchBar';
 
 const Banner2 = () => {
     return (
@@ -11,7 +12,10 @@ const Banner2 = () => {
             transition={{ type: 'spring', stiffness: 50 }}
             className="banner2"
         >
-        {/* <div className="banner2"> */}
+            {/* <div className="banner2"> */}
+            <div className="search-bar-container">
+                <SearchBar />
+            </div>
             <div className="banner2-content">
                 <div className="text2-content">
                     <motion.h1
@@ -26,7 +30,7 @@ const Banner2 = () => {
             <div className="vertical-button">
                 <h2 className="vertical-text">Book Service</h2>
             </div>
-        {/* </div> */}
+            {/* </div> */}
         </motion.div>
     )
 }
