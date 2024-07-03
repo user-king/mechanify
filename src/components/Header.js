@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../assets/styles/Header.css';
 import mechanifyLogo from '../assets/images/mechanify_logo.png';
 import userIcon from '../assets/images/user_icon.png';
+import dropdownIcon from '../assets/images/dropdown_icon.png';
 
 const Header = () => {
   return (
@@ -19,7 +20,7 @@ const Header = () => {
 
         <div className="dropdown">
           <button className="dropbtn">Services 
-            <i className="arrow-down"></i>
+            <img src={dropdownIcon} alt="dropdown" className="arrow-down" />
           </button>
           <div className="dropdown-content">
             <Link to="/service1">Service 1</Link>
@@ -29,10 +30,9 @@ const Header = () => {
         </div>
 
         {/* <Link to="/services" className="nav-link">Services</Link> */}
-        <Link to="/about" className="nav-link">About</Link>
         <Link to="/projects" className="nav-link">Projects</Link>
         <Link to="/blog" className="nav-link">Blog</Link>
-        <Link to="/testimonials" className="nav-link">Testimonials</Link>
+        <Link to="/about" className="nav-link">About</Link>
       </nav>
       <div className="user-options">
         <button className="btn">My Orders</button>

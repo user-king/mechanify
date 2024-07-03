@@ -6,6 +6,7 @@ import Feature from '../components/Feature';
 import BlogPage from '../components/Blog';
 import BannerCarousel from './BannerCarousel';
 import Brand from '../components/Brand';
+import Testimonials from './Testimonials';
 
 const Home = () => {
   return (
@@ -13,9 +14,10 @@ const Home = () => {
       
       <BannerCarousel />
       <AboutUs />
-      <Brand />
       <Feature />
+      <Brand />
       <BlogPage />
+      <Testimonials />
     </>
   );
 };

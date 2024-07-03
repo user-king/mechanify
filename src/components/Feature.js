@@ -6,7 +6,7 @@ const features = [
     title: 'Feature',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
     linkText: 'Try now',
-    logo: 'Mechanify'
+    logo: ''
   },
   {
     title: 'Feature',
@@ -24,9 +24,10 @@ const features = [
     title: 'Feature',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     linkText: 'Try now',
-    logo: 'Mechanify'
+    logo: ''
   }
 ];
+const colors = ['#f9c2ff', '#c2f0f9', '#fff9c2', '#c2f9c9'];
 
 const Feature = () => {
   return (
@@ -34,7 +35,12 @@ const Feature = () => {
       <h1>Features/Services</h1>
       <div className="features">
         {features.map((feature, index) => (
-          <div className="feature-card" key={index}>
+          <div 
+            // className="feature-card" 
+            className={`feature-card ${feature.logo ? 'large' : ''}`}
+            key={index}           
+            style={{ backgroundColor: colors[index % colors.length] }}
+          >
             <h2>{feature.title}</h2>
             <p>{feature.description}</p>
             <a href="#">{feature.linkText}</a>

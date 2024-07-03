@@ -7,6 +7,7 @@
   background-color:#188AEC;
   padding: 10px 20px;
   color: white;
+  height: 40px;
 }
 
 .logo-container {
@@ -55,10 +56,11 @@
 .arrow-down {
   margin-left: 5px;
   border: solid white;
-  border-width: 0 2px 2px 0;
+  border-width: 0;
   display: inline-block;
   padding: 3px;
-  transform: rotate(45deg);
+  width: 20px;
+  /* transform: rotate(45deg); */
 }
 
 .dropdown-content {
@@ -121,10 +123,11 @@
 .user-icon-container {
   display: flex;
   flex-direction: column;
-  /* margin-top: 4px; */
-  align-items: center; 
+  margin-top: 4px;
+  /* align-items:end;  */
 }
 .user-icon {
+  padding-top: 10px;
   height: 60px;
   border-radius: 50%;
   margin-left: -45px;

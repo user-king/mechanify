@@ -2,10 +2,21 @@ import React from 'react';
 import serviceImage from '../assets/images/service.png';
 import '../assets/styles/About.css';
 import mechanifyLogo from '../assets/images/mechanify_black.png';
+import closeIcon from '../assets/images/close_icon.png';
+import searchIcon from '../assets/images/search_icon.png';
 
 const AboutUs = () => {
   return (
     <section className="about-us">
+      <div className="top-right-buttons">
+        <div className="help-button">
+          How Can We Help You?
+          <img src={closeIcon} alt="Close" className="close-icon" />
+        </div>
+
+        <img src={searchIcon} alt="Search" className="search-icon" />
+      </div>
+
       <div className="about-us-content">
         <div className="text-section">
           <h4>Tag Line</h4>

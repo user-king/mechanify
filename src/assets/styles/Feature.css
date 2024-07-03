@@ -1,6 +1,8 @@
 .container {
     text-align: center;
     padding: 20px;
+    width: 100%;
+    background-color: #F5F5F5;
   }
   
   .features {
@@ -12,27 +14,38 @@
   
   .feature-card {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
     padding: 20px;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     position: relative;
+    text-align: start;
   }
   
+  .feature-card.large {
+    width: 40%; 
+  }
+
   .feature-card h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+
   }
   
   .feature-card p {
     color: #666;
     margin-bottom: 20px;
+    max-width: 250px;
   }
   
   .feature-card a {
     color: #007BFF;
     text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+
   }
   
   .feature-card a:hover {
@@ -42,9 +55,9 @@
   .logo {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 20px;
     color: #ccc;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 2.2em;
+    /* font-weight: bold; */
   }
   
