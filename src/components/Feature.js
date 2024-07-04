@@ -31,12 +31,11 @@ const colors = ['#f9c2ff', '#c2f0f9', '#fff9c2', '#c2f9c9'];
 
 const Feature = () => {
   return (
-    <div className="container">
+    <div className="feature-container">
       <h1>Features/Services</h1>
       <div className="features">
         {features.map((feature, index) => (
           <div 
-            // className="feature-card" 
             className={`feature-card ${feature.logo ? 'large' : ''}`}
             key={index}           
             style={{ backgroundColor: colors[index % colors.length] }}

@@ -45,7 +45,7 @@ const Brand = () => {
     return (
         <div className="brand-page">
             <motion.h1
-                className="brand-heading"  
+                className="brand-heading"
                 variants={headingVariants}
                 initial={{ y: '-100vh' }}
                 animate={{ y: 0 }}
@@ -60,7 +60,6 @@ const Brand = () => {
                 animate="animate"
                 transition={{ type: 'spring', stiffness: 50, delay: 0.7 }}
             >
-            {/* <div className="brand-images"> */}
                 {images.map((image, index) => (
                     <motion.img
                         key={index}
@@ -77,9 +76,8 @@ const Brand = () => {
                     />
                 ))}
 
-            {/* </div> */}
             </motion.div>
-        
+
         </div>
     );
 };

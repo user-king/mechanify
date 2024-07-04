@@ -3,16 +3,20 @@ import garage from '../assets/images/garage_services.png';
 import doorstep from '../assets/images/banner_image.png';
 import engine from '../assets/images/engine.png';
 import wheel from '../assets/images/wheel.png';
-
-// import '../assets/styles/Services.css';
+import curveLine from '../assets/images/curve.png';
+import '../assets/styles/Services.css';
+import MechanifyPass from '../components/MechanifyPass';
+import Contact from '../components/Contact';
+import Brand from '../components/Brand';
 
 const Services = () => {
   return (
     <div>
+      <MechanifyPass />
+      <Brand/>
       <div className="service-page">
         <h1 className='book-service'>Book Your Services</h1>
         <p className='text-experience'>Experience the best two wheeler from with us</p>
-
         <main className="main-content">
           <section className="service-selection">
             <div className="dropdown-container">
@@ -25,11 +29,11 @@ const Services = () => {
             <div className="service-options">
               <div className="service-option">
                 <img src={garage} alt="Mechanify" className="service-img" />
-                <h2 className="service-text">Garage Service</h2>
+                <h2 className="service-text">Garage<br /> Service</h2>
               </div>
               <div className="service-option">
                 <img src={doorstep} alt="Mechanify" className="service-img" />
-                <h2 className="service-text">Door Step <br/> Service</h2>
+                <h2 className="service-text">Door Step <br /> Service</h2>
               </div>
               <div className="service-option">
                 <img src={engine} alt="Mechanify" className="service-img" />
@@ -37,7 +41,7 @@ const Services = () => {
               </div>
               <div className="service-option">
                 <img src={wheel} alt="Mechanify" className="service-img" />
-                <h2 className="service-text">Tyre & <br/> Wheel Care</h2>
+                <h2 className="service-text">Tyre & <br /> Wheel Care</h2>
               </div>
             </div>
           </section>
@@ -45,20 +49,26 @@ const Services = () => {
             <div className="pricing-plan basic-plan">
               <h3>Basic</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <p className="view-benefits">View Benefits</p>
-              <p className="price-tag">Price</p>
+              <div className='view-benefits-bottom'>
+                <p className="view-benefits">View Benefits</p>
+                <p className="price-tag">Price</p>
+              </div>
             </div>
             <div className="pricing-plan standard-plan">
               <h3>Standard</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <button className="view-benefits-button">View Benefits</button>
-              <span className="price-tag">Price</span>
+              <div className='view-benefits-bottom'>
+                <p className="view-benefits-button">View Benefits</p>
+                <p className="price-tag">Price</p>
+              </div>
             </div>
             <div className="pricing-plan advance-plan">
               <h3>Advance</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <button className="view-benefits-button">View Benefits</button>
-              <span className="price-tag">Price</span>
+              <div className='view-benefits-bottom'>
+                <p className="view-benefits-button">View Benefits</p>
+                <p className="price-tag">Price</p>
+              </div>
             </div>
           </section>
           <section className="custom-message">
@@ -67,6 +77,9 @@ const Services = () => {
           </section>
         </main>
       </div>
+      {/* <img src={curveLine} alt="Curve Line" className="curve-line" /> */}
+
+      <Contact />
     </div>
   );
 };

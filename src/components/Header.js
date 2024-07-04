@@ -23,14 +23,14 @@ const Header = () => {
             <img src={dropdownIcon} alt="dropdown" className="arrow-down" />
           </button>
           <div className="dropdown-content">
-            <Link to="/service1">Service 1</Link>
+            <Link to="/services">Service 1</Link>
             <Link to="/service2">Service 2</Link>
             <Link to="/service3">Service 3</Link>
           </div>
         </div>
 
         {/* <Link to="/services" className="nav-link">Services</Link> */}
-        <Link to="/projects" className="nav-link">Projects</Link>
+        <Link to="/project" className="nav-link">Projects</Link>
         <Link to="/blog" className="nav-link">Blog</Link>
         <Link to="/about" className="nav-link">About</Link>
       </nav>
