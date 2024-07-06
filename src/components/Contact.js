@@ -4,7 +4,7 @@ import contactImage from '../assets/images/mechanifybranding.png';
 
 const Contact = () => {
   return (
-    <div className="container">
+    <div className="contact-container">
       <div className="image-container">
         <img src={contactImage} alt="Contact" />
       </div>

@@ -13,13 +13,15 @@ const Header = () => {
         <img src={mechanifyLogo} alt="Mechanify Logo" className="logo-header" />
       </div>
       <nav className="nav">
-        {/* <Link to="/" className="nav-link">Home</Link> */}
-        <div className="user-options">
+        <Link to="/" className="nav-link">
           <button className="btn1">Home</button>
-        </div>
+        </Link>
+        {/* <div className="user-options">
+          <button className="btn1">Home</button>
+        </div> */}
 
         <div className="dropdown">
-          <button className="dropbtn">Services 
+          <button className="dropbtn">Services
             <img src={dropdownIcon} alt="dropdown" className="arrow-down" />
           </button>
           <div className="dropdown-content">

@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import AnimatedBanner from './components/AnimatedBanner';
+import Blog from './pages/Blog';
+import ScheduleService from './pages/ScheduleService';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route path="/services" element={ <Services/> } />
             <Route path="/about" element={<About />} /> 
             <Route path="/projects" element={ <AnimatedBanner/> } />
+            <Route path="/blog" element={ <Blog/> } />
+            <Route path="/schedule-service" component={ <ScheduleService />} />
 
           </Routes>
         </main>

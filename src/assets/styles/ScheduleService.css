@@ -1,0 +1,59 @@
+/* Overall page styles */
+.schedule-service {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .left-section {
+    width: 60%;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #188AEC;
+  }
+  
+  .date-selection {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .date-option {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .date-option.selected {
+    background-color: #188AEC;
+    color: #fff;
+  }
+  
+  .time-selection {
+    display: flex;
+    flex-wrap: wrap;
+  
+}  

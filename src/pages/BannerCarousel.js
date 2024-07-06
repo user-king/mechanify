@@ -32,21 +32,28 @@ const BannerCarousel = () => {
 
     return (
         <Slider {...settings}>
-            {/* <Banner />
-                <Banner2 />
-                <Banner3 /> */}
             {slides.map((slide, index) => (
                 <div key={index}>
                     {index === 1 ? (
                         <motion.div
                             initial={{ y: '100vh' }}
                             animate={{ y: 0 }}
+                            exit={{ y: '-100vh' }}
                             transition={{ type: 'spring', stiffness: 50 }}
                         >
                             {slide.component}
                         </motion.div>
                     ) : (
-                        slide.component
+                        // slide.component
+                        <motion.div
+                            initial={{ x: '100vw' }}
+                            animate={{ x: 0 }}
+                            exit={{ x: '-100vw' }}
+                            transition={{ type: 'spring', stiffness: 50 }}
+                        >
+                            {slide.component}
+                        </motion.div>
+
                     )}
                 </div>
             ))}

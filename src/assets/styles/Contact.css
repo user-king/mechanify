@@ -1,4 +1,4 @@
-.container {
+.contact-container {
     display: flex;
     background-color: #fff;
     overflow: hidden;
@@ -19,16 +19,16 @@
   }
   
   .form-container {
-    /* flex: 1; */
     max-width: 30%;
-    height: 400px;
+    max-height: 380px;
     padding: 40px;
-    /* box-sizing: border-box; */
-    box-shadow: 5px 8px 11px -1px #00000042, -10px -10px 18px 0px #FFFFFF;
+    box-shadow: 1px 1px 1px 1px #00000042, 10px 10px 18px 20px #ffff;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     transform-style: preserve-3d;
     perspective: 1000px;
     color: #188AEC;
+    border-radius: 20px;
+    margin: 20px; 
   
   }
   
@@ -52,9 +52,10 @@
   .form-container input,
   .form-container textarea {
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 0px solid #ccc;
+    border-bottom: 1px solid black;
+    /* border-radius: 5px; */
     font-size: 1em;
   }
   
@@ -64,13 +65,16 @@
   }
   
   .form-container button {
-    padding: 15px;
-    font-size: 1em;
+    padding-left: 15px;
+    font-size: 12px;
     background-color: #007bff;
+    width: 130px;
+    height: 35px;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    text-align: left;
   }
   
   .form-container button:hover {

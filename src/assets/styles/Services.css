@@ -1,3 +1,5 @@
+/* 
+
 /* Overall page styles */
 .service-page {
   font-family: Arial, sans-serif;
@@ -57,8 +59,6 @@
 
 .service-options {
   display: flex;
-  /* justify-content: space-between; */
-  /* flex: 1; */
 }
 
 .service-option {
@@ -67,27 +67,28 @@
   width: 130px;
   height: 130px;
   background-color: #fff;
-  /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-shadow: 2px 2px 2px 1px #00000040;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   align-items:center;
-  /* text-align: left; */
 }
 
 .service-img {
   height: 50px;
   display: block;
   align-content: center;
-  /* align-self: center; */
   margin: 0 30px 10px auto;
-  /* margin: 20px; */
 }
 
 .service-text {
   color: #222222;
   font-size: 13px;
   text-align: center;
+}
+
+/* Dull service option style */
+.dull {
+  opacity: 0.5;
 }
 
 /* Pricing plan styles */
@@ -99,18 +100,17 @@
 
 .pricing-plan {
   padding: 20px;
-  border: 1px solid #ccc;
-  /* border-radius: 5px; */
-  width: 240px;
+  /* border: 1px solid #ccc; */
+  width: 28%;
   height: 240px;
   box-shadow: 1px 2px 2px -1px #00000040;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  /* align-items:end; */
   text-align: left;
-  background-color: #fff;
+  background-color: #F8F9FA;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
+  /* color: #171A1F; */
 }
 
 .pricing-plan h3 {
@@ -125,8 +125,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* bottom: 20px; */
-  top: 10px;
 }
 
 .view-benefits {
@@ -144,11 +142,8 @@
   display: block;
   text-decoration: underline;
   font-size: 16px;
-  /* margin-top: 10px; */
-  /* font-weight: bold; */
 }
 
-/* Custom message styles */
 .custom-message {
   display: flex;
   justify-content: space-between;
@@ -177,4 +172,20 @@
 
 .book-service-button:hover {
   background-color: #0056b3;
+}
+
+.curve-line {
+  background-image: url('../images/curve.png'); /* Path to the uploaded image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  margin-top: 20px;
+}
+
+/* Selected plan styles */
+.selected-plan {
+  background-color: #188AEC; /* Blue color */
+  color: #fff; /* White text color */
 }
