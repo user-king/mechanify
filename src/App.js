@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './assets/styles/App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,11 +10,33 @@ import AnimatedBanner from './components/AnimatedBanner';
 import Blog from './pages/Blog';
 import ScheduleService from './pages/ScheduleService';
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+
 function App() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = (isOpen) => {
+    setIsMenuOpen(isOpen);
+  };
+
   return (
     <Router>
-      <div className="App">
-        <Header />
+      {/* <div className="App"> */}
+      {/* <Header /> */}
+
+      <div className={`App ${isMenuOpen ? 'menu-open' : ''}`}>
+      <Header onMenuToggle={handleMenuToggle} />
+        <ScrollToTop />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

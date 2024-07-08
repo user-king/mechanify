@@ -16,7 +16,7 @@ const BannerCarousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         appendDots: dots => (
             <div style={{ position: 'absolute', bottom: '20px', }}>
                 <ul style={{ margin: '0px' }}> {dots} </ul>
@@ -44,7 +44,6 @@ const BannerCarousel = () => {
                             {slide.component}
                         </motion.div>
                     ) : (
-                        // slide.component
                         <motion.div
                             initial={{ x: '100vw' }}
                             animate={{ x: 0 }}

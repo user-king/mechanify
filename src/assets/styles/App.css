@@ -1,5 +1,4 @@
 .App {
-  /* text-align: center; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,6 +6,15 @@
 
 main {
   flex: 1;
-  /* padding: 2em; */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 1em;
+  }
+}
+
+.App.menu-open main {
+  margin-top: 200px; 
+}
