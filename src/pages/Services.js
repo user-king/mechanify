@@ -8,13 +8,11 @@ import MechanifyPass from '../components/MechanifyPass';
 import Contact from '../components/Contact';
 import Brand from '../components/Brand';
 import OurStore from '../components/OurStores';
-// import {useHistory} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
   const [selectedPlan, setSelectedPlan] = useState('basic');
   const [selectedService, setSelectedService] = useState('garage');
-  // const history = useHistory();
   const navigate = useNavigate();
 
 
@@ -35,7 +33,6 @@ const Services = () => {
 
   const navigateToScheduleService = () => {
     navigate('/schedule-service');
-    // navigate('/blog');
   };
 
 

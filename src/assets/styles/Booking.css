@@ -1,0 +1,319 @@
+/* src/assets/styles/Booking.css */
+
+.my-booking-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 120px 100px 120px;
+    bottom: -30%;
+    height: 120vh;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.upper-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-image: url('../images/booking_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: -1;
+}
+
+.lower-background {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: white;
+    z-index: -1;
+}
+
+.my-booking-heading {
+    color: #fff;
+    padding: 25px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 150px;
+    color: #fff;
+}
+
+.toggle-button.active {
+    background-color: #fff;
+    border-radius: 28px;
+    color: #007bff;
+}
+
+.my-booking-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.booking-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.booking-details,
+.pickup-details,
+.bike-details {
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    min-width: 300px;
+    text-align: start;
+}
+
+.booking-details {
+    border-right: 1px solid #ddd;
+}
+
+.pickup-details {
+    border-right: 1px solid #ddd;
+}
+
+.bike-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bike-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.status {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.confirmed {
+    color: green;
+}
+
+.in-progress {
+    color: orange;
+}
+
+.completed {
+    color: grey;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a img {
+    margin-right: 5px;
+}
+
+.track-service-button,
+.update-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.track-service-button:hover,
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+.divider {
+    display: none;
+}
+
+.contact-icon {
+    height: 15px;
+    width: 15px;
+}
+
+.service-details {
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    min-width: 300px;
+    text-align: start;
+}
+
+
+.booking-text {
+    font-size: 10px;
+    margin-top: -20px;
+    color: #474747;
+
+}
+
+.pickup-heading {
+    color: #007bff;
+}
+
+.service-parts {
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.service-part {
+    padding: 10px;
+    flex-direction: row;
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+}
+
+.ask {
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.multiply {
+    font-size: 11px;
+    color: #4C4C4C;
+    font-weight: 400;
+}
+
+.service-part-item {
+    color: #1A1A1A;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.toggle-parts {
+    border: 1.5px solid #007bff;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.toggle-part {
+    padding: 3px 20px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 10px;
+}
+
+.toggle-part.active.approve {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+  .toggle-part.active.decline {
+    background-color: red;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .toggle-part.decline {
+    color: red;
+  }
+  .toggle-part.approve {
+    color: #007bff;
+  }
+  
+
+  @media (max-width: 768px) {
+    .my-booking-page {
+      padding: 20px;
+      height: auto;
+    }
+  
+    .my-booking-heading {
+      font-size: 24px;
+    }
+  
+    .toggle-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .toggle-button {
+      width: 78%;
+    }
+  
+    .booking-card {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .booking-details,
+    .pickup-details,
+    .bike-details {
+      border: none;
+      min-width: 100%;
+    }
+  
+    .divider {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+      margin: 10px 0;
+    }
+  
+    .track-service-button,
+    .update-button {
+      width: 80%;
+    }
+
+    .service-parts {
+        width: 80%;
+    }
+  }

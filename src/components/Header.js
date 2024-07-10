@@ -31,7 +31,7 @@ const Header = ({onMenuToggle}) => {
           </button>
           <div className="dropdown-content">
             <Link to="/services">Service 1</Link>
-            <Link to="/service2">Service 2</Link>
+            <Link to="/booking">My Services</Link>
             <Link to="/service3">Service 3</Link>
           </div>
         </div>
