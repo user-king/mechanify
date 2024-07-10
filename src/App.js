@@ -11,6 +11,9 @@ import Blog from './pages/Blog';
 import ScheduleService from './pages/ScheduleService';
 import Booking from './pages/Booking';
 import TrackService from './pages/TrackService';
+import Login from './auth/Login';
+import OtpVerification from './auth/OtpVerification';
+import Awesome from './auth/Awesome';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -46,6 +49,9 @@ function App() {
             <Route path="/schedule-service" element={<ScheduleService />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/track-service" element={<TrackService />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/otp-verification" element={<OtpVerification />} />
+            <Route path="/awesome" element={<Awesome />} />
 
           </Routes>
         </main>

@@ -24,9 +24,7 @@ const ScheduleService = () => {
 
   return (
     <div className="schedule-service">
-      <header className="header">
         <button className="back-button" onClick={navigateBack}>&larr;</button>
-      </header>
       <div className="content">
         <div className="left-section">
           <h1 className="title">When Do you want to Schedule Your Vehicle Service?</h1>

@@ -6,15 +6,21 @@ import mechanifyLogo from '../assets/images/mechanify_logo.png';
 import userIcon from '../assets/images/user_icon.png';
 import dropdownIcon from '../assets/images/dropdown_icon.png';
 import menuIcon from '../assets/images/filter.png';
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({onMenuToggle}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     onMenuToggle(!isMenuOpen);
-
   };
+
+  const navigateToLogin = () => {
+    navigate('/login');
+  };
+
 
   return (
     <header className="header">
@@ -41,7 +47,9 @@ const Header = ({onMenuToggle}) => {
       </nav>
       <div className="user-options">
         <button className="btn">My Orders</button>
-        <button className="btn">Login</button>
+        <button className="btn" onClick={navigateToLogin}> Login
+          {/* <Link to="/login"></Link> */}
+        </button>
         <div className="user-icon-container">
           <img src={userIcon} alt="User Icon" className="user-icon" />
         </div>
