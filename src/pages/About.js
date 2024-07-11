@@ -13,7 +13,6 @@ const AboutUs = () => {
           How Can We Help You?
           <img src={closeIcon} alt="Close" className="close-icon" />
         </div>
-
         <img src={searchIcon} alt="Search" className="search-icon" />
       </div>
 

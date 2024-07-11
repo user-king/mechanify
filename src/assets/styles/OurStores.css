@@ -72,3 +72,25 @@
     right: 20px;
     width: 40px;
   }
+
+  /* Media Queries */
+@media (max-width: 768px) {
+  .our-store-header-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-thumbnails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+
+  .store-logo {
+    width: 120px;
+  }
+}

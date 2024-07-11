@@ -54,24 +54,6 @@ const Services = () => {
                 <option value="scooter">Scooter</option>
               </select>
             </div>
-            {/* <div className="service-options">
-              <div className="service-option">
-                <img src={garage} alt="Mechanify" className="service-img" />
-                <h2 className="service-text">Garage<br /> Service</h2>
-              </div>
-              <div className="service-option">
-                <img src={doorstep} alt="Mechanify" className="service-img" />
-                <h2 className="service-text">Door Step <br /> Service</h2>
-              </div>
-              <div className="service-option">
-                <img src={engine} alt="Mechanify" className="service-img" />
-                <h2 className="service-text">Engine Repairing</h2>
-              </div>
-              <div className="service-option">
-                <img src={wheel} alt="Mechanify" className="service-img" />
-                <h2 className="service-text">Tyre & <br /> Wheel Care</h2>
-              </div>
-            </div> */}
 
             <div className="service-options">
               {services.map(service => (

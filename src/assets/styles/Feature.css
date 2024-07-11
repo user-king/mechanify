@@ -1,7 +1,7 @@
 .feature-container {
     text-align: center;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
     background-color: #F5F5F5;
   }
   
@@ -14,11 +14,8 @@
   
   .feature-card {
     background-color: #f9f9f9;
-    /* border: 1px solid #ddd; */
-    /* border-radius: 8px; */
     padding: 20px;
     width: 25%;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     position: relative;
     text-align: start;
   }
@@ -45,7 +42,6 @@
     position: absolute;
     bottom: 10px;
     left: 20px;
-
   }
   
   .feature-card a:hover {
@@ -58,6 +54,24 @@
     right: 20px;
     color: #ccc;
     font-size: 2.2em;
-    /* font-weight: bold; */
   }
   
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 90%;
+  }
+
+  .feature-card.large {
+    width: 90%; 
+  }
+
+  .logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #ccc;
+    font-size: 1.0em;
+  }
+
+}

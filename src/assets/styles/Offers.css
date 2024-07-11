@@ -1,152 +1,187 @@
 .offers-container {
-    padding: 30vh 20px;
-    background-color: #EFEFEF;
-  }
-  
-  .offers-header {
-    display: flex;
-    align-items: center;
+  padding: 30vh 20px;
+  background-color: #EFEFEF;
+}
+
+.offers-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.offers-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.offers-left {
+  flex: 1;
+  border-right: 1px solid gray;
+  width: 20%;
+  padding-left: 200px;
+}
+
+.offers-right {
+  flex: 1;
+  /* display: flex; */
+}
+
+.offer-item,
+.spare-part-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.oil-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 12;
+  font-weight: bold;
+  width: 60px;
+  height: 80px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.offer-mainheading {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.offer-icon,
+.spare-part-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.offer-details,
+.spare-part-details {
+  flex: 1;
+}
+
+.offer-details-header {
+  color: #1A1A1A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.offer-details-text {
+  font-size: 10px;
+}
+
+.offer-action {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.offer-toggle,
+.spare-part-toggle {
+  display: flex;
+  gap: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.oil-selection {
+  margin-bottom: 20px;
+}
+
+.oil-items {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.oil-item {
+  width: 80px;
+  height: 80px;
+
+}
+
+.oil-item.selected {
+  background: #ff4500;
+  color: white;
+  width: 80px;
+  height: 80px;
+
+}
+
+.confirm-button {
+  display: block;
+  width: 100px;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px auto 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .offers-content {
+    flex-direction: column;
     gap: 10px;
   }
-  
-  .back-button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  h1 {
-    font-size: 24px;
-    color: #007bff;
-  }
-  
-  .offers-content {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
+
+  .offers-right,
   .offers-left {
-    flex: 1;
-    border-right: 1px solid gray;
-    width: 20%;
-    padding-left: 200px;
+    /* margin-top: 20px; */
+    width: 100%;
+    padding-left: 0;
+    flex: 1;  
+    border-bottom: 1px solid gray;
+    border-right: none;
   }
-  
+
   .offers-right {
-    flex: 1;
-    /* display: flex; */
+    border-bottom: none;
   }
-  .offer-item, .spare-part-item {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 40%;
+
+  .offer-item,
+  .spare-part-item {
+    width: 90%;
   }
 
   .oil-item {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 12;
-    font-weight: bold;
-    width: 60px;
+    width: 80px;
     height: 80px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
   }
 
-  .offer-mainheading {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .offer-icon, .spare-part-icon {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  .offer-details, .spare-part-details {
-    flex: 1;
-  }
-
-  .offer-details-header {
-    color: #1A1A1A;
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .offer-details-text {
-    font-size: 10px;
-  }
-  
-  .offer-action {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .offer-toggle, .spare-part-toggle {
-    display: flex;
-    gap: 5px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .oil-selection {
-    margin-bottom: 20px;
-  }
-  
-  .oil-items {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .oil-item.selected {
-    background: #ff4500;
-    color: white;
-  }
-  
   .confirm-button {
-    display: block;
-    width: 100px;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 20px auto 0;
+    width: 80%;
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .offers-content {
-      flex-direction: column;
-    }
-    
-    .offers-right {
-      margin-top: 20px;
-    }
-  
-    .confirm-button {
-      width: 100%;
-    }
-  }
-  
+}
