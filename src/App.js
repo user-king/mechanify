@@ -14,6 +14,8 @@ import TrackService from './pages/TrackService';
 import Login from './auth/Login';
 import OtpVerification from './auth/OtpVerification';
 import Awesome from './auth/Awesome';
+import Offers from './pages/Offers';
+import BookingSuccess from './assets/styles/BookingSuccess';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -52,7 +54,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/otp-verification" element={<OtpVerification />} />
             <Route path="/awesome" element={<Awesome />} />
-
+            <Route path="/offers" element={ <Offers />} />
+            <Route path="/booking-success" element={ <BookingSuccess />} />
           </Routes>
         </main>
         <Footer />

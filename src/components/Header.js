@@ -7,14 +7,20 @@ import userIcon from '../assets/images/user_icon.png';
 import dropdownIcon from '../assets/images/dropdown_icon.png';
 import menuIcon from '../assets/images/filter.png';
 import { useNavigate } from 'react-router-dom';
+import Profile from '../pages/Profile';
 
 const Header = ({onMenuToggle}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     onMenuToggle(!isMenuOpen);
+  };
+
+  const toggleProfileMenu = () => {
+    setIsProfileMenuOpen(!isProfileMenuOpen);
   };
 
   const navigateToLogin = () => {
@@ -50,9 +56,12 @@ const Header = ({onMenuToggle}) => {
         <button className="btn" onClick={navigateToLogin}> Login
           {/* <Link to="/login"></Link> */}
         </button>
-        <div className="user-icon-container">
+        <div className="user-icon-container" onClick={toggleProfileMenu}>
           <img src={userIcon} alt="User Icon" className="user-icon" />
         </div>
+        
+          {isProfileMenuOpen && <Profile />}
+
       </div>
       <button className="menu-icon" onClick={toggleMenu}>
         <img src={menuIcon} alt="Menu Icon" />
