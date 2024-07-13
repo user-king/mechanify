@@ -22,9 +22,7 @@ const SearchBar = () => {
                 placeholder="Search "
             />
             <button className="filter-button">
-                {/* <i className="fa fa-filter"></i> */}
                 <img src={Icon} alt="Search Bar" />
-
             </button>
         </div>
     );

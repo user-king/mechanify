@@ -16,7 +16,9 @@ const BannerCarousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
+        // rtl: true,
+        // vertical: true,
         appendDots: dots => (
             <div style={{ position: 'absolute', bottom: '20px', }}>
                 <ul style={{ margin: '0px' }}> {dots} </ul>
@@ -39,7 +41,7 @@ const BannerCarousel = () => {
                             initial={{ y: '100vh' }}
                             animate={{ y: 0 }}
                             exit={{ y: '-100vh' }}
-                            transition={{ type: 'spring', stiffness: 50 }}
+                            transition={{ type: 'spring', stiffness: 50, duration: 2 }}
                         >
                             {slide.component}
                         </motion.div>
@@ -48,7 +50,7 @@ const BannerCarousel = () => {
                             initial={{ x: '100vw' }}
                             animate={{ x: 0 }}
                             exit={{ x: '-100vw' }}
-                            transition={{ type: 'spring', stiffness: 50 }}
+                            transition={{ type: 'spring', stiffness: 50, duration: 2 }}
                         >
                             {slide.component}
                         </motion.div>

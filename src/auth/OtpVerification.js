@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const OtpVerification = () => {
-  const [otp, setOtp] = useState(["", "", "", "", "", ""]);
+  const [otp, setOtp] = useState(["", "", "", ""]);
   const navigate = useNavigate();
 
   const handleChange = (element, index) => {

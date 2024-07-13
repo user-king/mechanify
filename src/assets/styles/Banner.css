@@ -1,3 +1,7 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
 .banner {
   display: flex;
   justify-content: space-between;
@@ -11,6 +15,8 @@
   background-image: url('../images/background_shade.png');
   background-size: contain;
   background-position: center;
+  /* width: 100vw;
+  box-sizing: border-box; */
 }
 
 .search-bar-container {
@@ -31,6 +37,8 @@
   right: 20px;
   width: 300px;
   height: 40px;
+  /* position: relative; */
+
 }
 
 .search-bar input {
@@ -56,11 +64,14 @@
   border: none;
   color: white;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .filter-button img {
   height: 60px;
   border-radius: 20px;
+  /* background-color: red; */
+  /* margin-right: 50px; */
 }
 
 .banner-logo1 {
@@ -91,11 +102,13 @@
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .text-content p {
   font-size: 18px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .banner-buttons {
@@ -200,10 +213,8 @@
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
+  color: #fff;
 }
-
-
-
 
 .banner3-content {
   position: relative;
@@ -252,16 +263,25 @@
 /* Styles for smaller screens */
 @media only screen and (max-width: 768px) {
   .banner {
+    height: 120vh;
     flex-direction: column;
     padding: 20px;
-    height: auto;
+  }
+  .banner2 {
+    height: 120vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .banner3 {
+    height: 120vh;
+    flex-direction: column;
+    padding: 20px;
   }
 
   .search-bar-container {
     position: static;
     margin-bottom: 20px;
   }
-
 
   .text-content {
     text-align: center;
@@ -287,10 +307,10 @@
   }
 
   .search-bar {
-    width: 100%;
-    height: 50px;
+    width: 80%;
+    height: 30px;
     padding: 5px 10px;
-    position: static;
+    /* position: static; */
     margin-bottom: 20px;
   }
 
@@ -301,21 +321,11 @@
 
   .filter-button img {
     height: 40px;
-  }
-  .search-bar {
-      width: 100%;
-      height: 50px;
-      padding: 5px 10px;
-      position: static;
-      margin-bottom: 20px;
+    /* right: -50px; */
   }
 
   .search-bar input {
       font-size: 16px;
       padding: 8px;
-  }
-
-  .filter-button img {
-      height: 40px;
   }
 }

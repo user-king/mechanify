@@ -9,10 +9,9 @@ const Banner2 = () => {
         <motion.div
             initial={{ y: '100vh' }}
             animate={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 50 }}
+            transition={{ type: 'spring', stiffness: 50, duration: 4 }}
             className="banner2"
         >
-            {/* <div className="banner2"> */}
             <div className="search-bar-container">
                 <SearchBar />
             </div>
@@ -30,7 +29,6 @@ const Banner2 = () => {
             <div className="vertical-button">
                 <h2 className="vertical-text">Book Service</h2>
             </div>
-            {/* </div> */}
         </motion.div>
     )
 }
