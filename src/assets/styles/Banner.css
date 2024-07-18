@@ -1,7 +1,19 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
+
+.banner-gif {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #0187ff;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+
+}
+
 .banner {
   display: flex;
   justify-content: space-between;
@@ -262,16 +274,23 @@ body, html {
 
 /* Styles for smaller screens */
 @media only screen and (max-width: 768px) {
+  .banner-gif {
+    max-width: 90%;
+    height: auto;
+  }
+
   .banner {
     height: 120vh;
     flex-direction: column;
     padding: 20px;
   }
+
   .banner2 {
     height: 120vh;
     flex-direction: column;
     padding: 20px;
   }
+
   .banner3 {
     height: 120vh;
     flex-direction: column;
@@ -325,7 +344,7 @@ body, html {
   }
 
   .search-bar input {
-      font-size: 16px;
-      padding: 8px;
+    font-size: 16px;
+    padding: 8px;
   }
 }

@@ -93,6 +93,12 @@
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
+.pricing-plans-engine {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  gap: 20px;
+}
 
 .pricing-plan {
   padding: 20px;

@@ -1,0 +1,95 @@
+.edit-profile {
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.edit-profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-picture {
+    margin: 20px 0;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ffc107; /* yellow border */
+}
+
+.edit-pic-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0187ff; /* blue background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-input {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.confirm-button {
+    background-color: #0187ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .edit-profile {
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-input {
+        padding: 10px;
+    }
+
+    .confirm-button {
+        padding: 10px;
+    }
+}

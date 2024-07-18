@@ -23,6 +23,10 @@ const Header = ({onMenuToggle}) => {
     setIsProfileMenuOpen(!isProfileMenuOpen);
   };
 
+  const closeProfileMenu = () => {
+    setIsProfileMenuOpen(false);
+  };
+
   const navigateToLogin = () => {
     navigate('/login');
   };
@@ -60,7 +64,8 @@ const Header = ({onMenuToggle}) => {
           <img src={userIcon} alt="User Icon" className="user-icon" />
         </div>
         
-          {isProfileMenuOpen && <Profile />}
+          {isProfileMenuOpen && <Profile closeProfileMenu={closeProfileMenu} />}
+
 
       </div>
       <button className="menu-icon" onClick={toggleMenu}>

@@ -1,0 +1,80 @@
+.add-vehicle {
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.add-vehicle-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.vehicle-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.vehicle-input {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.vehicle-row {
+    display: flex;
+    gap: 15px;
+}
+
+.half-width {
+    flex: 1;
+}
+
+.verify-button {
+    background-color: #0187ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.save-vehicle-button {
+    background-color: #0187ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .vehicle-row {
+        flex-direction: column;
+    }
+
+    .verify-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

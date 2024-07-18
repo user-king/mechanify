@@ -57,8 +57,8 @@ const Services = () => {
 
             <div className="service-options">
               {services.map(service => (
-                <div 
-                  key={service.key} 
+                <div
+                  key={service.key}
                   onClick={() => handleServiceClick(service.key)}
                   className={`service-option ${selectedService === service.key ? '' : 'dull'}`}>
                   <img src={service.imgSrc} alt={service.label} className="service-img" />
@@ -66,43 +66,73 @@ const Services = () => {
                 </div>
               ))}
             </div>
+          </section>
 
-          </section>
-          <section className="pricing-plans">
-            <div
-              className={`pricing-plan basic-plan ${selectedPlan === 'basic' ? 'selected-plan' : ''}`}
-              onClick={() => handlePlanClick('basic')}
-            >
-              <h3>Basic</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <div className='view-benefits-bottom'>
-                <p className="view-benefits-button">View Benefits</p>
-                <p className="price-tag">Price</p>
-              </div>
-            </div>
-            <div
-              className={`pricing-plan standard-plan ${selectedPlan === 'standard' ? 'selected-plan' : ''}`}
-              onClick={() => handlePlanClick('standard')}
-            >
-              <h3>Standard</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <div className='view-benefits-bottom'>
-                <p className="view-benefits-button">View Benefits</p>
-                <p className="price-tag">Price</p>
-              </div>
-            </div>
-            <div
-              className={`pricing-plan advance-plan ${selectedPlan === 'advance' ? 'selected-plan' : ''}`}
-              onClick={() => handlePlanClick('advance')}
-            >
-              <h3>Advance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <div className='view-benefits-bottom'>
-                <p className="view-benefits-button">View Benefits</p>
-                <p className="price-tag">Price</p>
-              </div>
-            </div>
-          </section>
+          {
+            selectedService === 'engine' ?
+
+              <section className="pricing-plans-engine">
+                <div
+                  className={`pricing-plan basic-plan ${selectedPlan === 'basic' ? 'selected-plan' : ''}`}
+                  onClick={() => handlePlanClick('basic')}
+                >
+                  <h3>Half</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  <div className='view-benefits-bottom'>
+                    <p className="view-benefits-button">View Benefits</p>
+                    <p className="price-tag">Price</p>
+                  </div>
+                </div>
+                <div
+                  className={`pricing-plan standard-plan ${selectedPlan === 'standard' ? 'selected-plan' : ''}`}
+                  onClick={() => handlePlanClick('standard')}
+                >
+                  <h3>Full</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  <div className='view-benefits-bottom'>
+                    <p className="view-benefits-button">View Benefits</p>
+                    <p className="price-tag">Price</p>
+                  </div>
+                </div>
+              </section>
+
+              :
+              <section className="pricing-plans">
+                <div
+                  className={`pricing-plan basic-plan ${selectedPlan === 'basic' ? 'selected-plan' : ''}`}
+                  onClick={() => handlePlanClick('basic')}
+                >
+                  <h3>Basic</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  <div className='view-benefits-bottom'>
+                    <p className="view-benefits-button">View Benefits</p>
+                    <p className="price-tag">Price</p>
+                  </div>
+                </div>
+                <div
+                  className={`pricing-plan standard-plan ${selectedPlan === 'standard' ? 'selected-plan' : ''}`}
+                  onClick={() => handlePlanClick('standard')}
+                >
+                  <h3>Standard</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  <div className='view-benefits-bottom'>
+                    <p className="view-benefits-button">View Benefits</p>
+                    <p className="price-tag">Price</p>
+                  </div>
+                </div>
+                <div
+                  className={`pricing-plan advance-plan ${selectedPlan === 'advance' ? 'selected-plan' : ''}`}
+                  onClick={() => handlePlanClick('advance')}
+                >
+                  <h3>Advance</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  <div className='view-benefits-bottom'>
+                    <p className="view-benefits-button">View Benefits</p>
+                    <p className="price-tag">Price</p>
+                  </div>
+                </div>
+              </section>
+          }
           <section className="custom-message">
             <textarea className="custom-message-input" placeholder="Add custom message"></textarea>
             <button className="book-service-button" onClick={navigateToScheduleService}>Book Service</button>

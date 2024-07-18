@@ -16,6 +16,11 @@ import OtpVerification from './auth/OtpVerification';
 import Awesome from './auth/Awesome';
 import Offers from './pages/Offers';
 import BookingSuccess from './assets/styles/BookingSuccess';
+import MyAddress from './pages/MyAddress';
+import MyVehicle from './pages/MyVehicle';
+import AddAddress from './pages/AddAddress';
+import AddVehicle from './pages/AddVehicle';
+import EditProfile from './pages/EditProfile';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -55,7 +60,13 @@ function App() {
             <Route path="/otp-verification" element={<OtpVerification />} />
             <Route path="/awesome" element={<Awesome />} />
             <Route path="/offers" element={ <Offers />} />
-            <Route path="/booking-success" element={ <BookingSuccess />} />
+            {/* <Route path="/booking-success" element={ <BookingSuccess />} /> */}
+            <Route path="/my-vehicle" element={ <MyVehicle />} />
+            <Route path="/my-address" element={ <MyAddress />} />
+            <Route path="/add-address" element={ <AddAddress />} />
+            <Route path="/add-vehicle" element={ <AddVehicle />} />        
+            <Route path="/edit-profile" element={ <EditProfile />} />        
+                
           </Routes>
         </main>
         <Footer />

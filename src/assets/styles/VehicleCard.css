@@ -1,0 +1,70 @@
+.vehicle-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 35%;
+    align-self: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-image {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.vehicle-details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.vehicle-name {
+    font-size: 18px;
+    margin: 0;
+}
+
+.vehicle-model {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0 0;
+}
+
+.vehicle-number {
+    font-size: 14px;
+    color: #888;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: blue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .vehicle-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vehicle-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .vehicle-details {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .delete-button {
+        align-self: center;
+        margin-top: 10px;
+    }
+}

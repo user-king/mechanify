@@ -1,12 +1,13 @@
 .offers-container {
-  padding: 30vh 20px;
+  /* padding: 30vh 20px; */
+  padding: 20px;
   background-color: #EFEFEF;
 }
 
 .offers-header {
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .back-button {
